@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html style="background-color:powderblue;">
+<head>
+    <meta charset="UTF-8">
+    <title>{{Title}}</title>
+</head>
+<body>
+
+ {% for m in menu %}
+<li>{{m}}</li>
+  {% endfor %}
+</ul>
+
+{% block mainmenu %}
+
+{% endblock mainmenu %}
+
+{% block content %} {% endblock %}
+
+{% block css_add %} {% endblock %}
+
+</body>
+</html>

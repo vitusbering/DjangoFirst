@@ -1,0 +1,33 @@
+{% extends 'squad/base.html' %}
+{% load static %}
+
+{% block css_additional %}
+ <link rel="stylesheet" href="{% static 'squad/css/index.css' %}">
+ {% endblock %}
+
+<!--<!DOCTYPE html>-->
+<!--<html lang="en">-->
+<!--<head>-->
+<!--    <meta charset="UTF-8">-->
+<!--    <title>{{ title }}</title>-->
+<!--</head>-->
+<!--<body>-->
+<!--<ul>-->
+<!--{% for m in menu %}-->
+<!--<li>{{m}}</li>-->
+<!--{% endfor %}-->
+<!--</ul>-->
+
+<!--</body>-->
+<!--</html>-->
+
+
+{% block content %}
+
+<h1 style="color:darkorange;",>{{title}}</h1>
+<p style="color:darkred;">Content of main page</p>
+<img src={% static 'squad/images/index.png' %}>
+<br>
+{% include 'squad/for_include.html' %}
+
+{% endblock %}

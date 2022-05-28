@@ -1,0 +1,14 @@
+{% extends 'post/base.html' %}
+{% load static %}
+
+{% block css_add %}
+ <link rel="stylesheet" href="{% static 'post/css/style.css' %}">
+{% endblock %}
+
+{% block content %}
+
+<h1 style="color:olivedrab;",>{{title}}</h1>
+<p style="color:red;">Content of main page</p>
+<img src={% static "post/image/Home.jpeg" %}>
+
+{% endblock %}

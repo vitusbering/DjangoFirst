@@ -1,0 +1,27 @@
+{% extends 'squad/base.html' %}
+
+{% load static %}
+
+{% block css_additional %}
+ <link rel="stylesheet" href="{% static 'squad/css/about.css' %}">
+{% endblock %}
+<!--<!DOCTYPE html>-->
+<!--<html lang="en">-->
+<!--<head>-->
+<!--    <meta charset="UTF-8">-->
+<!--    <title>{{ title}}</title>-->
+<!--</head>-->
+<!--<body>-->
+<!--<h1>About site</h1>-->
+<!--<ul>-->
+<!--{%for m in menu%}-->
+<!--<li>{{m}}</li>-->
+<!--{%  endfor %}-->
+<!--</ul>-->
+<!--</body>-->
+<!--</html>-->
+{% block content %}
+<h1 style="color:darkgoldenrod;",>{{title}}</h1>
+<p style="color:green;">Content of main page</p>
+<img src={% static 'squad/images/about.jpeg' %}>
+{% endblock %}
